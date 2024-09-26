@@ -11,22 +11,28 @@ This is a Flask-based web application designed to store and manage birthdays, se
 - **Upcoming Birthdays**: View a list of birthdays happening in the next 30 days.
 - **Edit and Delete**: Modify or remove existing birthday entries.
   
+Here’s how you can format the project structure in your `README.md` file to make it look cleaner and more visually appealing using Markdown:
+
+```markdown
 ## Project Structure
 
+```
 your-flask-app/
 ├── static/
-│   └── style.css              # CSS for styling the application
+│   └── **style.css**              # CSS for styling the application
 ├── templates/
-│   ├── base.html               # Base template with navigation bar
-│   ├── index.html              # Home page to display today's birthdays
-│   ├── upcoming_birthdays.html # Displays upcoming birthdays in next 30 days
-│   ├── add_birthday.html       # Form to add new birthday
-│   └── edit_birthday.html      # Form to edit existing birthday
-├── app.py                      # Main Flask application logic
-├── models.py                   # Database models using SQLAlchemy
-├── requirements.txt            # Python package dependencies
-└── README.md                   # This file
+│   ├── **base.html**               # Base template with navigation bar
+│   ├── **index.html**              # Home page to display today's birthdays
+│   ├── **upcoming_birthdays.html** # Displays upcoming birthdays in next 30 days
+│   ├── **add_birthday.html**       # Form to add new birthday
+│   └── **edit_birthday.html**      # Form to edit existing birthday
+├── **app.py**                      # Main Flask application logic
+├── **models.py**                   # Database models using SQLAlchemy
+├── **requirements.txt**            # Python package dependencies
+└── **README.md**                   # This file
+```
 
+This uses **bold** to highlight the important file names and makes the structure clear. You can further customize the descriptions as needed.
 
 ## Getting Started
 
