@@ -1,0 +1,78 @@
+/* General styling */
+body {
+    background-image: linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px; /* Wider container */
+}
+
+h1 {
+    color: white; /* Title color */
+}
+
+/* Card styling */
+.card {
+    position: relative;
+    width: 300px;
+    height: 425px;
+    margin: 20px; /* Margin between cards */
+    perspective: 1000px; /* Perspective for the 3D effect */
+}
+
+.card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Maintain 3D transformations */
+    transition: transform 0.6s; /* Smooth transition for flipping */
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide back face when not visible */
+    border: 10px solid #9612eb;
+}
+
+.card-front {
+    background: #fff; /* White background for front */
+    box-shadow: inset 10px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-back {
+    background: #9612eb; /* Background for back */
+    color: white; /* Text color for back */
+    transform: rotateY(180deg); /* Rotate back face to hide it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #41718d;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
