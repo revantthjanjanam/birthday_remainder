@@ -1,6 +1,4 @@
-Here's an example of a `README.md` file for your birthday reminder project.
 
-```markdown
 # Birthday Reminder Application
 
 This is a Flask-based web application designed to store and manage birthdays, send birthday wishes through WhatsApp, and manage a list of upcoming birthdays.
@@ -15,7 +13,6 @@ This is a Flask-based web application designed to store and manage birthdays, se
   
 ## Project Structure
 
-```
 your-flask-app/
 ├── static/
 │   └── style.css              # CSS for styling the application
@@ -29,7 +26,7 @@ your-flask-app/
 ├── models.py                   # Database models using SQLAlchemy
 ├── requirements.txt            # Python package dependencies
 └── README.md                   # This file
-```
+
 
 ## Getting Started
 
@@ -87,15 +84,3 @@ The database is powered by SQLite and managed through SQLAlchemy. To reset the d
 
 When you click the "Send Wishes" button, the app redirects you to WhatsApp with a pre-filled message. Ensure the contact numbers are stored in the database in the correct format (including country code `+91` for India).
 
-## Screenshots
-
-![Home Page](static/screenshot-home.png)
-*Description: The home page shows today's birthdays along with buttons to send WhatsApp wishes.*
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
-You can customize this `README.md` further to match your specific project details. Don't forget to include the screenshots, and make sure your instructions are clear about setting up the project!
