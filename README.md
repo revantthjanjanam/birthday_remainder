@@ -1,2 +1,2 @@
-# birthda_remainder
+# birthday_remainder
 Birthday remainder
