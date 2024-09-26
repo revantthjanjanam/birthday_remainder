@@ -64,16 +64,28 @@ your-flask-app/
 ├── models.py                   # Database models using SQLAlchemy
 ├── requirements.txt            # Python package dependencies
 └── README.md                   # This file
-
+```
 
 ## Usage
 
-- **Home Page**: Lists today's birthdays and provides an option to send wishes via WhatsApp.
-- **Upcoming Birthdays**: Shows a list of people whose birthdays are coming up within the next 30 days.
-- **Add Birthday**: Add a new entry to the birthday database.
-- **Edit/Delete Birthday**: Modify or remove an existing entry from the birthday database.
+### Adding a New Birthday
+1. Go to the **Add New Birthday** page.
+2. Fill in the name, date of birth, and contact details.
+3. Submit the form to add the birthday to the database.
 
-### WhatsApp Integration
+### Viewing Today's Birthdays
+- The home page displays a list of people whose birthday is today, along with a button to send them a pre-filled WhatsApp message.
 
-When you click the "Send Wishes" button, the app redirects you to WhatsApp with a pre-filled message. Ensure the contact numbers are stored in the database in the correct format (including country code `+91` for India).
+### Viewing Upcoming Birthdays
+- Navigate to the **Upcoming Birthdays** section to view all the birthdays happening in the next 30 days.
 
+### Editing or Deleting a Birthday
+1. Navigate to the **Edit Birthday** section.
+2. You can modify the name, phone number, or date of birth of any existing entry, or delete the entry entirely.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+```
+
+This `README.md` includes an overview of the project, installation instructions, a description of the project structure, usage details, and licensing information.
