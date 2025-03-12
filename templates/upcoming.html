@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="mb-4">Upcoming Birthdays (Next 30 Days)</h1>
+  {% if birthdays %}
+    <ul class="list-group">
+      {% for birthday in birthdays %}
+        <li class="list-group-item">{{ birthday.name }} - {{ birthday.dob }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="alert alert-info">No upcoming birthdays! 🎈</div>
+  {% endif %}
+{% endblock %}
